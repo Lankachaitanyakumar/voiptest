@@ -1,0 +1,564 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Welcome to my blog</title>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- CSS -->
+   <!--  <link href="multislider/css/custom.css" rel="stylesheet"> -->
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+   <!-- <title>Welcome to hotel</title> -->
+
+    <!-- Bootstrap CSS -->
+     <script src="https://kit.fontawesome.com/c2d6e3b4a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	<link rel="shortcut icon" href="logo/favicon.png"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <!-- heder section start --><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-168908171-1"></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-168908171-1');</script><meta name="google-site-verification" content="_R0W6YBnwD7TuaY2_LVDW-_h0C251peKFO3KmumkSPU" />
+  </head>	
+
+<link rel="stylesheet" type="text/css" href="asserts/css.css">
+	<title></title>
+
+<style type="text/css">
+	.hover:hover{
+	color:#118acb;
+	cursor: pointer; 
+}
+	/* Style the buttons */
+      .about-bg-img{
+    background-image: url("asserts/img5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .page-title-wrapper:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 2;
+    margin: 0 auto;
+    background: #000;
+}
+.fab:hover{
+	cursor: pointer;
+}
+.fa-facebook-f:hover{
+     color: #3b5998;
+}
+.fa-twitter:hover{
+	color: #00acee;
+}
+.fa-instagram:hover{
+color:#3f729b;
+}
+
+.fa-skype:hover{
+	color: #00aff0;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+
+</head>
+<body>
+<!--  header section start -->  
+  	
+<style type="text/css">
+		.menu-icon,.name-logo,.min-banager{
+		display:none;
+     }
+
+	@media only screen and (max-width: 767px)
+	{
+
+	.menu-icon,.name-logo,.min-banager{
+		display:inline;
+     }
+     .weather{
+     	display: none;
+     }
+     .menu-ph{
+           display: block;
+           right:0px;
+           top:-25px;
+           position: absolute;
+           width:100vw;
+           background-color: white;
+           display: grid;
+           animation-name: menu_bar_flow;
+           animation-duration: 1s;
+           animation-fill-mode: forwards;
+           z-index: 100;
+           display: none;
+
+
+      
+      }
+      
+      @keyframes menu_bar_flow{
+        0%{
+           width: 40vw;
+        }
+        100%{
+            
+        width: 100vw;
+        }
+       }
+
+     .book{
+     	display: none;
+     }
+
+h5{
+    text-transform:lowercase;
+}
+	}
+
+
+  .bg-img{
+content:'';
+position: relative;
+background-attachment: fixed;
+overflow: hidden;
+background-repeat: no-repeat 0 0;
+background-size: cover;
+background-position: center;
+background-image: url("./h1-bg-destinations.jpg");
+
+
+} 
+</style>
+   
+
+
+	<!-- header section start -->
+		<section class="sticky-top" style="background-color:#72305f;">
+	    		
+	    <div class="row menubar m-0 " style="">
+	    	<div class="col-xl-2 col-md-2 col-sm-10 col-10 text-center mx-auto">
+	    		
+	    		<img src="./asserts/logo.png" width="150px" height="70px" class="logo ml-xl-5 ml-md-5 mx-2 mt-xl-2 mt-md-2 my-0">
+	    		<i class="name-logo" style="margin-top: 30px; top:5px;">Lanka Chaitanya Kumar</i>
+	    		
+
+	    	</div>
+	      <div class="col-xl-8 col-md-10 col-sm-2 col-2  text-uppercase" style=""; font-size:18px;">
+	    	
+	    			<div class="menu-icon " style="font-size: 30px;">
+	    			<i class="fas fa-bars mt-4" id="menu-icon" onclick="menu_open()" style="cursor: pointer;"></i>
+	    </div>
+	    			<ul class="nav nav-pills justify-content-around mt-4 mb-xl-0 mb-md-0 mb-sm-5 mb-5 menu-ph py-2 text-center text-uppercase" id="menu-ph" style="background-color:#72305f;">
+	    		  <div class=" col-12 min-banager" style="position:absolute;background-color: #72305f;">
+	    		    
+	    		         <img src="./asserts/logo.png" width="100px" height="70px" class="logo ml-xl-5 ml-md-5 mx-3 mt-xl-4 mt-md-4 my-3">
+	    		        <i class="name-logo" style="margin-top: 30px; top:5px;">Lanka Chaitanya Kumar
+	    		        
+	    		        <i class="fas fa-bars mt-4 mr-5 text-right" id="menu-icon" onclick="menu_close()" style="position: absolute;right: 0px;font-size: 30px;cursor: pointer;"></i></i>
+	    		 </div>
+	    		
+
+	    		    <li class="nav-item my-0 mb-3  pt-sm-5 mt-sm-5 pt-md-0 mt-md-0 pt-xl-0 mt-xl-0 pt-5 mt-5">
+	    			  	
+	    			  	 <h5><a href="./index.html" class="nav-item link text-light" style="text-transform:capitalize;">home</a></h5>
+	    					
+	    				</li>
+	    				<li class="nav-item my-0">
+	    					<h5><a href="#" class="nav-item link text-light" style="text-transform:capitalize;">about us</a></h5>
+	    					
+	    				</li>
+	    			 
+	    				<li class="nav-item my-0">
+	    					
+	    					<h5><a href="#" class="nav-item link text-light" style="text-transform:capitalize;">Services</a></h5>
+	    					
+	    				</li>
+
+	    		       
+	    			  <li class="nav-item my-0">
+	    					<h5><a href="#" class="nav-item link text-light" style="text-transform:capitalize;">Solutions</a></h5>
+	    					
+	    				</li>
+	    				
+	    				  <li class="nav-item my-0">
+	    					<h5><a href="#" class="nav-item link text-light" style="text-transform:capitalize;">Carrer</a></h5>
+	    					
+	    				</li>
+	    				
+	    			 <li class="nav-item my-0">
+	    					<h5><a href="#" class="nav-item link text-light" style="text-transform:capitalize;">blog</a></h5>
+	    					
+	    				</li>
+
+	    			  <li class="nav-item my-0">
+	    					<h5><a href="#" class="nav-item link text-light" style="text-transform:capitalize;font-size:1.25rem;font-weight:500">contact us</a></h5>
+	    					
+	    				</li>
+
+
+	    			</ul>
+
+	    			
+	    		
+	    	</div> 
+
+	    	<div class=" col-xl-2 col-md-0  book">
+	    		
+
+
+	    	
+	    	
+	    </div>
+
+
+		</section>
+		<!-- header section end -->
+		<script type="text/javascript">
+			function menu_open(){
+              console.log("menu_open");
+              document.getElementById("menu-ph").style.display="grid"; 
+			}
+
+
+
+			function menu_close(){
+               console.log("menu_close");
+               document.getElementById("menu-ph").style.display="none";   
+
+			}
+		</script><!--  header section end -->
+
+<!-- about section main-img -->
+<section  class="bg-info py-5 m-0 p-0" style="position: relative;">
+
+  
+   <div class="row page-title-wrapper pb-4 m-0 p-0">
+    
+    <div class="col-12 mx-auto text-center text-capitalize ">
+      
+      <h2 class="text-uppercase pt-5 text-light" style="font-size: 38px;
+    font-weight: 700;color: #fff;">voip office C.. F..</h2>
+    <hr class="bg-info mx-auto" style="width: 100px">
+   <!--<p class="text-uppercase mt-5" style="font-size: 18px;color: #9a9a9a">-->
+   <!-- Home <i class="fas fa-arrow-right mx-2"></i> banquet -->
+   <!--</p>-->
+   </div> 
+  </div>
+</section>
+<!-- about section smain-img -->
+
+<!-- body section start -->
+
+					
+						
+
+		
+
+<section class="">
+  <div class="bg-top-img">
+    <div class="bg-color">
+  <div class="row m-0">
+
+
+
+   <div class="col-12 text-center mx-auto m-0 " style="z-index: 1000;">
+       <h3 class="mt-5 " style="font-family: 'Playfair Display'; font-weight: 700; font-size: 40px; letter-spacing:4px; ">
+        Transforming
+        Healthcare Industry
+       </h3>
+       <p class="col-xl-6 mx-auto" style="color: #333" class="mb-3">
+        Today’s healthcare organizations are using innovative communications to deliver quality, 
+        unified Business solutions for Healthcare sector by decreasing the overhead and leveraging
+         the mobile staff as well as providing the patients with right support at the time of crisis.
+       </p>
+   </div> 
+   </div>
+   <div class="row m-0">
+     <div class="col-10 mx-auto text-center">
+         <div class="row">
+
+
+
+
+
+         <div class="div1 col-xl-3 col-md-6 col-sm-12 col-12 my-4 mx-auto">
+             
+          <img src="./asserts/img1.jpg" height="210px" width="100%" class="pt-3" >
+
+          <!--  <img src="top_dest/img-4.jpg" width="100%" class="pt-3"> -->
+           <div class="py-4 text-left  px-4" style="background-color: #fff">
+              <!-- <h4 class="">Classic Room</h4> -->
+              <h4>Service1 </h4>
+               
+              <p class="text-justify">
+                Today’s healthcare organizations are using innovative communications to deliver quality.
+              </p>
+             <p style="background:#cf76ad">
+              <a href="#" <button class="btn  text-capitalize text-center text-light col-12" style="font-weight:800">Explore Now</button></a>
+             </p>
+           </div>
+
+         </div>
+         
+         <div class="div1 col-xl-3 col-md-6 col-sm-12 col-12 my-4 mx-auto">
+             
+          <img src="./asserts/img2.png" width="100%" height="210px" class="pt-3" >
+
+          <!--  <img src="top_dest/img-4.jpg" width="100%" class="pt-3"> -->
+           <div class="py-4 text-left  px-4" style="background-color: #fff">
+              <!-- <h4 class="">Classic Room</h4> -->
+              <h4>Service 2</h4>
+               
+              <p class="text-justify">
+           unified Business solutions for Healthcare sector by decreasing the overhead and leveraging the mobile .
+              </p>
+             <p style="background:#cf76ad">
+             <a href="#" <button class="btn  text-capitalize text-center text-light col-12" style="font-weight:800">Explore Now</button></a>
+             </p>
+           </div>
+
+         </div>
+         
+         
+                  <div class="div1 col-xl-3 col-md-6 col-sm-12 col-12 my-4 mx-auto">
+             
+          <img src="./asserts/img3.jpg" width="100%" height="210px" class="pt-3" >
+
+  
+       
+          <!--  <img src="top_dest/img-4.jpg" width="100%" class="pt-3"> -->
+           <div class="py-4 text-left  px-4" style="background-color: #fff">
+              <!-- <h4 class="">Classic Room</h4> -->
+              <h4>Service 3</h4>
+               
+              <p class="text-justify">
+                unified Business solutions for Healthcare sector by decreasing the overhead and leveraging the mobile .
+                   </p>
+             <p style="background:#cf76ad">
+                <a href="#" <button class="btn  text-capitalize text-center text-light col-12" style="font-weight:800">Explore Now</button></a>
+             </p>
+           </div>
+
+         </div>
+
+
+
+     <div class="div1 col-xl-3 col-md-6 col-sm-12 col-12 my-4 mx-auto">
+             
+          <img src="./asserts/img4.png" width="100%" height="210px"class="pt-3" >
+
+          <!--  <img src="top_dest/img-4.jpg" width="100%" class="pt-3"> -->
+           <div class="py-4 text-left  px-4" style="background-color: #fff">
+              <!-- <h4 class="">Classic Room</h4> -->
+              <h4 class="mb-3 pb-2">Service 4</h4>
+                <p class="mt-3"> 
+                      <i class="text-info" STYLE="font-weight:800"></i>
+                </p>
+             
+                <p class="text-justify">
+             unified Business solutions for Healthcare sector by decreasing the overhead the mobile</p>
+             <p class="mt-4 " style="background:#cf76ad">
+                  <a href="#" <button class="btn  text-capitalize text-center text-light col-12" style="font-weight:800">Explore Now</button></a>
+             </p>
+           </div>
+
+         </div>
+         
+
+
+
+     </div>
+   </div>
+   </div>
+   </div>
+ </div>
+</section>
+    
+
+<!--   body section end -->
+<!-- TOP-DES SECTION end -->
+
+<!--  footer section start -->
+<section class="" style="background-color: #060b1d" >
+
+<div class="row m-0">
+   <div class="col-xl-10 col-md-11 m-0 mx-auto">
+     <div class="row mt-0" style="color: #84868d">
+        <!--<hr class="w-100  p-0" style="background-color:#84868d">-->
+       <div class="col-xl-3 col-md-6 mr-0 pt-2 m-0 ">
+
+         <div class="mt-3 mb-3 ">
+           <img src="./asserts/logo.png" height="" width="250px"> 
+         </div>
+            
+          <p>
+          <i class="far fa-address-card pr-3"></i> 
+             Madhapur Ayyappa socity
+            <p style="margin-left:36px;margin-top:-20px">Hyderabad, 
+       
+           Telagana , INDIA </p>
+
+         </p>
+         
+         <p>
+          
+           <i class="fas fa-mobile-alt pr-3"></i>
+          
+          
+           <p style="margin-left:30px;margin-top:-20px">+91 9160621517</p>
+         
+          </p>
+         
+         <p>
+         
+         
+         <a href="mailto:info@gadirajupalacevizag.com"> <i class="far fa-envelope pr-3"></i>  lankachaitanyakumar0@gmail.com</a>
+         
+         </p>
+       </div>
+
+         <div class="col-xl-3 col-md-3 col-12 col-sm-12 text-center  mx-auto py-xl-5 py-md-0 text-capitalize">
+           <h5 class="pt-5 text-light">
+             about us
+           </h5>
+           <div  style="color: #84868d" class="pb-xl-5 pb-md-0 pb-sm-3 pb-3" style="font-size: 18px;">
+             
+            <p>
+             <a href="index.php" style="color: #84868d">Home</a>
+           </p>
+           <p>
+             <a href="#" style="color: #84868d">About</a>
+           </p>
+
+           <p>
+             <a href="#" style="color: #84868d">services</a>
+           </p>
+           
+                      <p>
+             <a href="#" style="color: #84868d">solutions</a>
+           </p>
+
+           </div>
+       </div>
+        <div class="col-xl-3 col-md-3 col-12 col-sm-12 py-xl-5 py-md-0 text-center text-capitalize mx-auto">
+                    <h5 class="pt-5 text-light">
+            About us
+           </h5>
+           <div  style="color: #84868d" style="font-size: 18px;">
+           <p>
+             <a href="#" style="color: #84868d">contact US</a>
+           </p>
+            <p>
+             <a href="#" style="color: #84868d">Carrier</a>
+           </p>
+
+          
+
+           </div>
+
+       </div> 
+
+
+              <div class="col-xl-3 col-md-12 col-12 col-sm-12  py-xl-5 py-md-0 text-capitalize text-center mx-auto">
+                    <h5 class="pt-5 text-light text-center mx-auto mb-3">
+             Map Location
+           </h5>
+           <div class=" rounded" style="font-size: 18px;">
+
+ <iframe class="mx-auto " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.9437576260066!2d-83.15006378424684!3d42.57771622932041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c40bc3f67e91%3A0x97f3d2201225dea4!2sVoIP%20Office%20LLC!5e0!3m2!1sen!2sin!4v1582209965437!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+           </div>
+
+       </div>
+
+
+
+
+
+           <hr class="w-100  p-0" style="background-color:#84868d">
+     </div>
+
+     <div class="mx-auto text-center text-capitalize" style="font-size: 14px;">
+       <p class="text-light">Copyrights © 2020.<i class="text-info"> All rights reserved by VOIP officce communication freely</i></p>
+     
+     
+     </div>
+
+   </div>
+
+</div>  
+</section><!--  footer section end -->
+</body>
+</html>
